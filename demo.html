@@ -1,0 +1,20 @@
+<html>
+<head>
+<title> Subtitle Player </title>
+
+<script type="text/javascript" src="SubPlayerJS.js" ></script>
+</head>
+<body>
+<center>
+ <div id="divIDwhereVideoPlayerWillBeLoaded"></div> 
+</center>
+ <br />
+ <center> Credit to <b><a href="https://github.com/EldinZenderink">EldinZenderink</a></b></center>
+<p>If the subtitle is not on time with the movie, modify it manually by adding <em>'?plus=[time in seconds:1,2,3.1,4.12]'</em> after the link. <strong>EXAMPLE: | C:/Users/Admin/Desktop/subtitle/demo.html?plus=12.3 |</strong> </p>
+<script>
+
+	var newPlayer = new SubPlayerJS('#divIDwhereVideoPlayerWillBeLoaded', 'https://archive.org/download/ce94_20200508/ce94.mp4');
+	newPlayer.setSubtitle('https://gist.githubusercontent.com/ToiletPaper2424/843de8978309774551af13ce7d186ba1/raw/abc320e29523397f5d26f38571143c6a49ea149c/chungking-sibtitle.srt'); 
+</script>
+</body>
+</html>
